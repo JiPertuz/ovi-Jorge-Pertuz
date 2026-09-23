@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recursividad</title>
+  <link rel="icon" href="../img/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="container header__inner flex flex--between flex--wrap">
+      <a class="brand" href="../index.html">OVI <small>Programación II</small></a>
+      <nav aria-label="Principal"><ul class="nav">
+<li><a href="index.html">Inicio</a></li>
+<li><a href="pages/lecturas.html" aria-current="page">Lecturas</a><ul class="submenu"><li><a href="lectura-poo.html">Introducción a la POO</a></li><li><a href="lectura-clases-objetos.html">Clases y objetos</a></li><li><a href="lectura-herencia-polimorfismo.html">Herencia y polimorfismo</a></li><li><a href="lectura-estructuras-datos.html">Estructuras de datos</a></li><li><a href="lectura-recursividad.html">Recursividad</a></li></ul></li>
+<li><a href="pages/multimedia.html">Multimedia</a></li>
+<li><a href="pages/actividades.html">Actividades</a></li>
+<li><a href="pages/autores.html">Autores</a></li>
+</ul></nav>
+    </div>
+  </header>
+  <main id="main" class="container">
+<header class="page-title"><h1>Recursividad</h1><p class="lead">Resolver un problema con versiones más pequeñas de sí mismo.</p></header><div class="layout"><article class="content">
+<p>Una función recursiva se llama a sí misma y necesita un caso base que detenga las llamadas; sin él, el programa nunca termina.</p>
+<pre><code>static long factorial(int n) {
+    if (n &lt;= 1) return 1;      // caso base
+    return n * factorial(n - 1); // caso recursivo
+}</code></pre>
+<h2>Cuándo usarla</h2>
+<p>Es natural en problemas con estructura repetida, como recorrer un árbol o calcular Fibonacci. Si el problema se resuelve fácil con un ciclo, la versión iterativa suele ser más eficiente.</p></article><aside class="sidebar" aria-labelledby="lst"><h2 id="lst">Lecturas</h2><ul><li><a href="lecturas.html">Todas las lecturas</a></li><li><a href="lectura-poo.html">Introducción a la POO</a></li><li><a href="lectura-clases-objetos.html">Clases y objetos</a></li><li><a href="lectura-herencia-polimorfismo.html">Herencia y polimorfismo</a></li><li><a href="lectura-estructuras-datos.html">Estructuras de datos</a></li><li><a href="lectura-recursividad.html" aria-current="page">Recursividad</a></li></ul></aside></div><nav class="pager flex flex--between flex--wrap" aria-label="Navegación entre lecturas"><a href="lectura-estructuras-datos.html" rel="prev">Anterior: Estructuras de datos</a><span></span></nav>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer__inner flex flex--between">
+      <p>Ingeniería de Sistemas · Universidad de Córdoba</p>
+      <p>OVI de Programación II, 2026</p>
+    </div>
+  </footer>
+</body>
+</html>
