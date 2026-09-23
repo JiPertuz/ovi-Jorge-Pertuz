@@ -1,0 +1,9 @@
+form{display:grid;gap:var(--s-2);max-width:36rem}
+fieldset{border:var(--border);padding:var(--s-3);display:grid;gap:var(--s-2)}
+legend{font:700 1.1rem var(--f-serif);padding-inline:var(--s-1)}
+label{display:grid;gap:.3rem;font-weight:600;font-size:.95rem}
+input,textarea{font:inherit;padding:.6rem .75rem;border:var(--border);border-radius:var(--radius);background:var(--c-bg)}
+input[type=range]{padding:0;accent-color:var(--c-fg)}
+button{font:inherit;font-weight:600;padding:.7rem 1.4rem;background:var(--c-fg);color:var(--c-bg);border:var(--border);border-radius:var(--radius);cursor:pointer;justify-self:start}
+button:hover{background:var(--c-bg);color:var(--c-fg)}
+input:user-invalid{border-style:dashed}

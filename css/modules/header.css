@@ -1,0 +1,11 @@
+.site-header{position:sticky;top:0;z-index:100;background:var(--c-bg);border-bottom:var(--border)}
+.header__inner{padding-block:var(--s-2)}
+.brand{font:700 1.3rem var(--f-serif);text-decoration:none}
+.brand small{font:400 .85rem var(--f-sans);color:var(--c-muted);margin-left:var(--s-1)}
+.nav{display:flex;flex-wrap:wrap;gap:.25rem}
+.nav>li{position:relative}
+.nav a{display:block;padding:.45rem .9rem;text-decoration:none;font-size:.95rem;border-radius:var(--radius)}
+.nav a:hover,.nav a[aria-current="page"]{background:var(--c-fg);color:var(--c-bg)}
+.submenu{position:absolute;left:0;top:100%;min-width:14rem;background:var(--c-bg);border:var(--border);display:none}
+.nav>li:hover>.submenu,.nav>li:focus-within>.submenu{display:block}
+@media (max-width:768px){.submenu{display:none!important}}

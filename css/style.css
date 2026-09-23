@@ -1,0 +1,17 @@
+@import "variables.css";
+@import "minxins.css";
+@import "modules/header.css";
+@import "modules/layout.css";
+@import "modules/components.css";
+@import "modules/forms.css";
+@import "modules/footer.css";
+
+body{font:1rem/1.7 var(--f-sans);color:var(--c-fg);background:var(--c-bg);min-height:100vh;display:grid;grid-template-rows:auto 1fr auto}
+h1,h2,h3{font-family:var(--f-serif);font-weight:700;line-height:1.15;letter-spacing:-.01em}
+h1{font-size:clamp(2.4rem,7vw,4.5rem);letter-spacing:-.03em}
+h2{font-size:1.6rem;margin-bottom:var(--s-2)}
+h3{font-size:1.15rem;margin-bottom:var(--s-1)}
+p{max-width:68ch}
+a{text-underline-offset:3px}
+:focus-visible{outline:3px solid var(--c-fg);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
