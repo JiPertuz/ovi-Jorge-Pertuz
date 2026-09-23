@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Actividades</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="container header__inner flex flex--between flex--wrap">
+      <a class="brand" href="../index.html">OVI <small>Programación II</small></a>
+      <nav aria-label="Principal"><ul class="nav">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../pages/lecturas.html">Lecturas</a><ul class="submenu"><li><a href="../pages/lectura-poo.html">Introducción a la POO</a></li><li><a href="../pages/lectura-clases-objetos.html">Clases y objetos</a></li><li><a href="../pages/lectura-herencia-polimorfismo.html">Herencia y polimorfismo</a></li><li><a href="../pages/lectura-estructuras-datos.html">Estructuras de datos</a></li><li><a href="../pages/lectura-recursividad.html">Recursividad</a></li></ul></li>
+        <li><a href="../pages/multimedia.html">Multimedia</a></li>
+        <li><a href="../pages/actividades.html" aria-current="page">Actividades</a></li>
+        <li><a href="../pages/autores.html">Autores</a></li>
+        </ul></nav>
+    </div>
+  </header>
+  <main id="main" class="container">
+    <header class="page-title">
+    <h1>Actividades</h1>
+    <p class="lead">Practica con los ejercicios y registra tu autoevaluación.</p>
+    </header>
+    <div class="content">
+        <section aria-labelledby="ej">
+            <h2 id="ej">Ejercicios</h2>
+            <ul class="grid-cards">
+            <li class="card"><h3>Clase Cuenta</h3><p>Modela una cuenta bancaria con saldo privado, depósito y retiro.</p></li>
+            <li class="card"><h3>Jerarquía de figuras</h3><p>Crea Figura, Círculo y Rectángulo con un método <code>area()</code> polimórfico.</p></li>
+            <li class="card"><h3>Pila con lista</h3><p>Implementa <code>push</code> y <code>pop</code> sobre una lista enlazada.</p></li>
+            <li class="card"><h3>Fibonacci</h3><p>Escribe la versión recursiva y compárala con la iterativa.</p></li>
+            </ul>
+        </section>
+        <section aria-labelledby="auto">
+        <h2 id="auto">Autoevaluación</h2>
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Tus datos</legend>
+                <label>Nombre completo<input type="text" name="nombre" placeholder="Ana Pérez" required autofocus></label>
+                <label>Correo electrónico<input type="email" name="correo" placeholder="ana@correo.com" required></label>
+                <label>Tema que quieres reforzar<input type="text" name="tema" list="temas" required></label>
+                <datalist id="temas"><option value="Clases y objetos"><option value="Herencia"><option value="Polimorfismo"><option value="Pilas y colas"><option value="Recursividad"></datalist>
+                <label>Nivel de dominio: <output id="nv">3</output> de 5<input type="range" name="nivel" min="1" max="5" value="3" oninput="nv.value=this.value"></label>
+                <label>Comentarios<textarea name="comentarios" rows="4"></textarea></label>
+            </fieldset>
+            <button type="submit">Enviar autoevaluación</button>
+            </form>
+  </section>
+</div>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer__inner flex flex--between">
+      <p>Ingeniería de Sistemas · Universidad de Córdoba</p>
+      <p>OVI de Programación II, 2026</p>
+    </div>
+  </footer>
+</body>
+</html>
